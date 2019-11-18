@@ -1,0 +1,9 @@
+.padding-calcu(@count,@i) when(@i<=@count){
+    .padding-@{i}{
+      padding: @i *5px;
+    }
+    .padding-calcu(@count,(@i+1));
+}
+
+.padding-calcu(6,1);
+
