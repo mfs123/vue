@@ -1,0 +1,92 @@
+// 登录  找回密码 登录后的样式三步走
+
+@border-color:#6e7680;
+.border-bottom{
+	border-bottom:1px solid @border-color;
+}
+
+.register-box{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+}
+.login{
+    background: url(../imges/bg.png) no-repeat;
+    background-position-x:center ;
+	min-height: 319px;
+}
+
+.forget{
+    background: url(../imges/bg.png) no-repeat;
+    background-position-x:center ;
+}
+
+.register-content{
+    width: 300px;
+	position: absolute;
+	left:50%;
+	top: 50%;
+	margin-top: -158px;
+	margin-left: -150px;
+}
+
+.register-input{
+	border: none;
+	outline:none;
+	.border-bottom;
+	background: transparent;
+	height: 40px;
+	width: 100%;
+	color: #fff;
+	padding-left: 20px;
+}
+
+.register-form-item{
+	color: #fff;
+	position: relative;
+	.form-icon{
+		 position: absolute;
+		 left: 0;
+		 bottom: 15px;
+	}
+}
+
+input::placeholder{
+	color: #f5f5f5;
+}
+
+
+
+// 是否默认密码 
+.remeber{
+	appearance: none;
+}
+
+.remeber:after{
+	content: '';
+	display: inline-block;
+	background: url(../imges/icon.png) no-repeat;
+	width:17px;
+	height: 15px;
+	vertical-align: middle;
+	background-position-y: 1px;
+
+}
+
+.remeber:checked:after{
+	background-position-y: bottom;
+}
+
+.remember-item{
+	.el-form-item__content{
+		line-height: 25px;
+	}
+}
+
+.rehister-btn{
+	border-radius: 15px;
+	width: 100%;
+}
